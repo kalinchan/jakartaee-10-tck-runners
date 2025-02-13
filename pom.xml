@@ -103,7 +103,7 @@
         <jakarta.tck.bean-validation.version>3.1.1</jakarta.tck.bean-validation.version>
         <jakarta.tck.servlet.jsp-api.version>4.0.0</jakarta.tck.servlet.jsp-api.version>
         <jakarta.tck.pages.version>4.0.0</jakarta.tck.pages.version>
-        <jakarta.tck.common.version>11.0.0-M1</jakarta.tck.common.version>
+        <jakarta.tck.common.version>11.0.0-RC4</jakarta.tck.common.version>
         <jakarta.tck.signaturetest.version>11.0.0-M1</jakarta.tck.signaturetest.version>
         <jakarta.tck.persistence.version>3.2.0</jakarta.tck.persistence.version>
         <jakarta.tck.cdi.version>4.1.0</jakarta.tck.cdi.version>
@@ -134,6 +134,10 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
+        </repository>
+        <repository>
+            <id>jakarta-snapshots</id>
+            <url>https://jakarta.oss.sonatype.org/content/repositories/staging/</url>
         </repository>
         <repository>
             <id>payara-nexus-snapshots</id>
@@ -361,21 +365,6 @@
                 <payara.artifact>payara-web</payara.artifact>
                 <jakarta.tck.platform>web</jakarta.tck.platform>
             </properties>
-        </profile>
-        <profile>
-            <id>jakarta-staging</id>
-            <repositories>
-                <repository>
-                    <id>jakarta-releases</id>
-                    <url>https://jakarta.oss.sonatype.org/content/groups/staging/</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                </repository>
-            </repositories>
         </profile>
 
         <profile>
