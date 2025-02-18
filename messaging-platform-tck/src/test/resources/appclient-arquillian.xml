@@ -23,7 +23,6 @@
                 <property name="unpackClientEar">true</property>
                 <!-- Need to populate from ts.jte command.testExecuteAppClient setting for glassfish -->
                 <property name="clientCmdLineString">${payara.home}/glassfish/bin/appclient \
-                    -debug \
                     -Djdk.tls.client.enableSessionTicketExtension=false \
                     -Djdk.tls.server.enableSessionTicketExtension=false \
                     -Djava.security.policy=${payara.home}/glassfish/lib/appclient/client.policy \

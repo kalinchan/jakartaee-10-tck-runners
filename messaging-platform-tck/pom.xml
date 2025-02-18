@@ -134,7 +134,7 @@
         </dependency>
         <dependency>
             <groupId>jakarta.tck</groupId>
-            <artifactId>jms</artifactId>
+            <artifactId>jms-platform-tck</artifactId>
             <version>${jakarta.tck.messaging.version}</version>
         </dependency>
         <dependency>
@@ -237,7 +237,7 @@
         <dependency>
             <groupId>jakarta.tck</groupId>
             <artifactId>dbprocedures</artifactId>
-            <version>3.2.0</version>
+            <version>3.2.1-SNAPSHOT</version>
             <scope>test</scope>
             <exclusions>
                 <exclusion>
@@ -349,7 +349,7 @@
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>jakarta.tck</groupId>
-                                    <artifactId>jms</artifactId>
+                                    <artifactId>jms-platform-tck</artifactId>
                                     <overWrite>true</overWrite>
                                     <outputDirectory>${project.build.directory}${file.separator}lib</outputDirectory>
                                     <destFileName>jms-tck.jar</destFileName>
@@ -397,7 +397,7 @@
                                 <artifactItem>
                                     <groupId>jakarta.tck</groupId>
                                     <artifactId>dbprocedures</artifactId>
-                                    <version>${jakarta.tck.persistence.version}</version>
+                                    <version>3.2.1-SNAPSHOT</version>
                                     <type>jar</type>
                                     <overWrite>true</overWrite>
                                     <outputDirectory>${javadb.lib}</outputDirectory>
@@ -772,7 +772,7 @@
                             </includes>
                             <!-- Select the @Tag("tck-appclient") tests -->
                             <groups>tck-appclient</groups>
-                            <dependenciesToScan>jakarta.tck:jms</dependenciesToScan>
+                            <dependenciesToScan>jakarta.tck:jms-platform-tck</dependenciesToScan>
                             <systemPropertyVariables>
                                 <PAYARA_HOME>${payara.home}</PAYARA_HOME>
                                 <payara.home>${payara.home}</payara.home>
